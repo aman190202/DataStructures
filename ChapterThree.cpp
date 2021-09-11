@@ -51,10 +51,10 @@ int main()
     system("cls");
     Node* head= new Node();
     std::cout<<"Empty Node has been Initialised. \n";
-    int nodes{0};
+    int nodes{1};
     while(1)
     {
-        std::cout<<"Linked List has "<<nodes<<" at present\nEnter Q to implement Q , S to implement stack and E to exit\n";
+        std::cout<<"Linked List has "<<nodes<<" nodes at present\nEnter Q to implement Queue , S to implement stack and E to exit\n";
         char ch{};
         std::cin>>ch;
         int data{};
@@ -67,5 +67,6 @@ int main()
         else 
             return 0;
         PrintList(head);
+        nodes++;
     }
 }
